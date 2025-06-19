@@ -1,0 +1,16 @@
+#include <stdio.h>
+#include <string.h>
+
+int main() {
+    char inputString[100];
+    fgets(inputString, sizeof(inputString), stdin);
+    inputString[strcspn(inputString, "\n")] = 0;
+
+    char *space = strchr(inputString, ' ');
+    if (space != NULL) {
+        *space = 0;
+    }
+    
+    printf("May I know how to learn %s!!!...", inputString);
+    return 0;
+}
