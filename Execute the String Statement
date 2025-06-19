@@ -1,0 +1,12 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+    char name[100];
+    fgets(name, sizeof(name), stdin);
+    name[strcspn(name, "\n")] = 0;
+    printf("Hai %s!\tWelcome to Programming Language...", name);
+    return 0;
+}
