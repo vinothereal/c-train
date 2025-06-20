@@ -1,0 +1,17 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+    int integer_input;
+    char char_input;
+
+    scanf("%d", &integer_input);
+    scanf(" %c", &char_input);
+
+    printf("Integer of %d is %c\n", integer_input, (char)integer_input);
+    printf("Character of %c is %d\n", char_input, (int)char_input);
+
+    return 0;
+}
