@@ -1,0 +1,25 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+    int num1, num2;
+
+    scanf("%d", &num1);
+    scanf("%d", &num2);
+
+    int addition = num1 + num2;
+    int subtraction = num1 - num2;
+    int multiplication = num1 * num2;
+    int division = num1 / num2;
+    int modulo = num1 % num2;
+
+    printf("Addition=%d\n", addition);
+    printf("Subtraction=%d\n", subtraction);
+    printf("Multiplication=%d\n", multiplication);
+    printf("Division=%d\n", division);
+    printf("Modulo=%d\n", modulo);
+
+    return 0;
+}
