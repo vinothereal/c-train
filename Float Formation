@@ -1,0 +1,23 @@
+#include <stdio.h>
+#include <math.h>
+
+int main() {
+    float num;
+
+    // Read float input
+    scanf("%f", &num);
+
+    // Default float format (may show more precision)
+    printf("%f\n", num);
+
+    // Float with 4 decimal places
+    printf("%.4f\n", num);
+
+    // Float with 2 decimal places
+    printf("%.2f\n", num);
+
+    // Rounded to nearest integer
+    printf("%.0f\n", round(num));
+
+    return 0;
+}
