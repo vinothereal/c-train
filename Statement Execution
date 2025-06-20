@@ -1,0 +1,25 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+    int integer_value;
+    float float_value;
+    char char_value;
+    char string1[100];
+    char string2[100];
+
+    scanf("%d", &integer_value);
+    scanf("%f", &float_value);
+    scanf(" %c", &char_value);
+    scanf("%s", string1);
+    scanf(" %[^\n]s", string2);
+
+    printf("Integer is %d\n", integer_value);
+    printf("Float is %.2f\n", float_value);
+    printf("Character is %c\n", char_value);
+    printf("Strings are %s and %s\n", string1, string2);
+
+    return 0;
+}
